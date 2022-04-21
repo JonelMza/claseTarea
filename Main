@@ -1,0 +1,21 @@
+package claseTarea;
+
+class Main
+{
+	public static void main(String[] args)
+	{
+		TeoremaCuadrado teore = new TeoremaCuadrado();
+
+		teore.establecerNumero1(3);
+		teore.establecerNumero2(5);
+		teore.establecerNumero3(2);
+
+
+		System.out.printn("Valor de a: "+teore.establecerNumero1());
+		System.out.printn("Valor de b: "+teore.establecerNumero2());
+		System.out.printn("Valor de c: "+teore.establecerNumero3());
+		System.out.printn("La solucion de la ecuacion en negativo: "+teore.opeN());
+		System.out.printn("La solucion de la ecuacion en positivo: "+teore.opeP());
+	}
+
+}

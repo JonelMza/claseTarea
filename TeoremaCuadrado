@@ -41,7 +41,7 @@ class TeoremaCuadrado
 		void opeCuadraticaN()
 		{
 			double opeN;
-			opeN = (-b - Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+			opeN = (-obtenerNumero2() - Math.sqrt(Math.pow(obtenerNumero2(),2)-4*obtenerNumero1()*obtenerNumero3()))/2*obtenerNumero1();
 
 			return opeN;
 		}
@@ -49,7 +49,7 @@ class TeoremaCuadrado
 		void opeCuadraticaP()
 		{
 			double opeP;
-			opeP = (-b + Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+			opeP = (-obtenerNumero2() - Math.sqrt(Math.pow(obtenerNumero2(),2)-4*obtenerNumero1()*obtenerNumero3()))/2*obtenerNumero1();
 
 			return opeP;
 		}

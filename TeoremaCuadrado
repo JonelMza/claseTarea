@@ -1,0 +1,57 @@
+package claseTarea;
+
+class TeoremaCuadrado
+{
+	double numero1;
+
+	double numero2;
+
+	double numero3;
+
+
+		void establecerNumero1(double a)
+		{
+			numero1 = a;
+		}
+
+		double obtenerNumero1()
+		{
+			return numero1;
+		}
+		void establecerNumero2(double b)
+		{
+			numero2 = b;
+		}
+
+		double obtenerNumero2()
+		{
+			return numero2;			
+		}
+		void establecerNumero3(double c)
+		{
+			numero3 = c;
+		}
+
+		double obtenerNumero3()
+		{
+			return numero3;			
+		}
+
+
+		void opeCuadraticaN()
+		{
+			double opeN;
+			opeN = (-b - Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+
+			return opeN;
+		}
+
+		void opeCuadraticaP()
+		{
+			double opeP;
+			opeP = (-b - Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+
+			return opeP;
+		}
+
+}

@@ -1,0 +1,53 @@
+package claseTarea;
+
+class InteresComp
+{
+	double cap;
+
+	double inte;
+
+	double numPer;
+
+	//double imporAcum;
+
+
+
+		void establecerCap(double a)
+		{
+			cap = a;
+		}
+
+		double obtenerCap()
+		{
+			return cap;
+		}
+		void establecerInte(double b)
+		{
+			inte = b;
+		}
+
+		double obtenerInte()
+		{
+			return inte;			
+		}
+		void establecerNumPer(double c)
+		{
+			numPer = c;
+		}
+
+		double obtenerNumPer()
+		{
+			return numPer;			
+		}
+
+
+		public double forInterComp()
+		{
+			double imporAcum;
+			imporAcum = cap * Math.pow(1 + inte),numPer;
+
+			return imporAcum;
+		}
+
+
+}

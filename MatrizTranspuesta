@@ -1,0 +1,80 @@
+package claseTarea8;
+
+import javax.swing.*;
+
+
+public class Matriz {
+
+    private int matriz[][];
+
+    private int fila;
+
+    private int columna;
+
+    private int valores;
+
+    public Matriz()
+    {
+    	System.out.printn("Ingrese los valores de la fila y la columna(Que sean iguales)");
+        fila = Integer.parseInt(JOptionPane.showInputDialog("Ingresar Fila"));
+
+        columna = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Columna"));
+        /*while(fila != columna);
+        {
+        	fila = Integer.parseInt(JOptionPane.showInputDialog("Ingresar la fila nuevamente"));
+
+        columna = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la columna nuevamente"));
+        }*/
+
+        this.matriz = new int[fila][columna];
+    }//pedimos los valores de la fila y la columna
+
+    public void agregarMatriz()
+    {
+        for (int fila=0; fila < this.matriz.length; fila++)
+        {
+            for (int columna=0; columna < this.matriz[fila].length; columna++)
+            {
+                this.valores = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Valores"));
+
+                this.matriz[fila][columna] = this.valores;
+            }
+        }
+    }//pedimos valores de la matriz
+
+    public void mostrarMatriz()
+    {
+        for(int fila=0; fila < this.matriz.length; fila++)
+        {
+            for(int columna=0; columna < this.matriz[fila].length; columna++)
+            {
+                System.out.printf("%d ", this.matriz[fila][columna]);
+            }
+
+            System.out.println();
+        }
+    }
+    public void mostrarMatrizTras()
+    {
+        for(int columna=0; columna < this.matriz.length; columna++)
+        {
+            for(int fila=0; fila < this.matriz[fila].length; fila++)
+            {
+                System.out.printf("%d ", this.matriz[columna][fila]);
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[])
+    {
+        Matriz matriz = new Matriz();
+
+        matriz.agregarMatriz();
+
+        matriz.mostrarMatriz();
+
+        System.out.printn("La transpuesta de la matriz ingresada es: "+matriz.mostrarMatrizTras());
+    }
+}

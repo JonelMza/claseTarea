@@ -3,7 +3,7 @@ package claseTarea8;
 import javax.swing.*;
 
 
-public class Matriz {
+public class MatrizTrans {
 
     private int matriz[][];
 
